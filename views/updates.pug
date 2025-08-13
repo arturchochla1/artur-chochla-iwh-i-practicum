@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+body
+div.container
+    h1(style="text-align: center")= title
+
+    form(action="/create-cobj", method="post")
+        label(for="name") Name:
+        input(type="text", name="name", placeholder="Ferrari" required)
+
+        label(for="size") Size:
+        input(type="text", name="size", placeholder="Small" required)
+
+        label(for="colour") Colour:
+        input(type="text", name="colour", placeholder="Red" required)
+        br
+
+        button(type="submit") Create
+
+    br
+    div.button-wrapper
+    a(href="/" class="back-btn") Return to the homepage
