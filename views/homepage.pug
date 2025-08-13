@@ -1,24 +1,24 @@
 doctype html
 html
-  head
-    title= title
-    link(rel="stylesheet", href="/css/style.css")
-  body
-    div.container
-      h1 CARS list:
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        div.container
+            h1 CARS Custom Object Table:
 
-      table
-        thead
-          tr
-            th Name
-            th Size 
-            th Colour
-        tbody
-          each record in records
-            tr
-              td= record.properties.name
-              td= record.properties.size
-              td= record.properties.colour
+            table
+                thead
+                    tr
+                    th Name
+                    th Size 
+                    th Colour
+            tbody
+                each record in records
+                tr
+                    td= record.properties.name
+                    td= record.properties.size
+                    td= record.properties.colour
 
-      div.button-wrapper 
-         a(href="/create-car") Add car
+            div.button-wrapper 
+                a(href="/add-car") Add car
